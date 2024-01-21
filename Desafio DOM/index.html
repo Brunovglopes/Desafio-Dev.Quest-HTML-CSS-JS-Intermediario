@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Links/CSS/style.css">
+    <title>Desafio-HTML/CSS/JS Intermediário </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text">
+            <p class="title"> FICOU COM DÚVIDA? <br>
+                NOS MANDE UMA MENSAGEM! </p><br>
+            <p class="texto"> Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em
+                contato em menos de 24h.
+            </p>
+        </div>
+        <main>
+            <div class="formulario">
+                <input type="text" placeholder=" Nome completo *" id="name">
+                <span id="obrigatorio_name" class="obrigatorio "></span>
+
+                <input type="email" placeholder=" Email *" id="email">
+                <span id="obrigatorio_email" class="obrigatorio"> </span>
+
+                <input type="number" placeholder=" Telefone *" id="number">
+                <span id="obrigatorio_number" class="obrigatorio"></span>
+
+                <textarea placeholder=" Mensagem *" id="msg"></textarea>
+                <span id="obrigatorio_msg" class="obrigatorio"></span>
+                <p> * campos obrigatórios </p>
+                <button id="submit" onclick="test()">Enviar</button>
+            </div>
+        </main>
+    </div>
+
+   
+</body>
+ <script type="text/javascript" src="./Links/Javascript/javascript.js"></script>
+</html>

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    font-size: 16pt;
+}
+ body{ 
+    background-image: url("../Imagens/bg-repeat.jpg");
+    background-size: 100vw 100vh;
+} 
+.container{ 
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+/* Texto */
+.text{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 0px 50px 0px 100px;
+    color: aliceblue;
+}
+.title{ 
+    font-weight: bold;
+    font-size: 24pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.texto{
+    font-size: 20pt;
+   margin-right: 2 0%;
+}
+
+/* formulario */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formulario{
+    background-color: white;
+    height: 82%;
+    width: 80%;
+   
+   
+}
+ input, textarea{ 
+    display: block;
+    border-radius: 10px;
+    margin: 2.5% 5% 0.5% 5%;
+    width: 90%;
+    height: 55px;
+    border-width: 2;
+    border-color: black;
+}
+ button {
+    border: 0;
+    border-radius: 10px;
+    padding: 0;
+    width: 90%;
+    height: 70px;
+    margin: 0px 5%;
+    background-color: rgb(9, 202, 138);
+    color: white;
+}
+#msg{
+    height: 150px;
+    border-width: 2px;
+}  
+#number::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.formulario p{ 
+    padding-left: 5%;
+    padding-bottom: 15px;
+} 
+ .obrigatorio {
+    position: relative;
+    padding-left: 5%;
+    bottom: 10px;
+    
+} 
+
+.block{
+border-color: red;
+}
+.okay{ 
+    border-color: rgb(0, 255, 0);
+}
+.alert::after{
+    content: "Campo Obrigatório";
+    font-size: 12px;
+    color: rgb(236, 34, 34); 
+}
+
